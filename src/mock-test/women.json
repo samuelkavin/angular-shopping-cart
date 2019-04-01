@@ -1,0 +1,56 @@
+[
+    {
+        "id": "5ca0b7552f4a4c5b161a61d3",
+        "name": "Beverley Carr",
+        "index": 0,
+        "isActive": false,
+        "price": 45.44,
+        "image": "http://placehold.it/32x32",
+        "description": "Aliquip dolor qui pariatur veniam esse duis ea eiusmod in anim id proident id magna."
+    },
+    {
+        "id": "5ca0b7554738912f2d0c4654",
+        "name": "Michele Crosby",
+        "index": 1,
+        "isActive": false,
+        "price": 30.85,
+        "image": "http://placehold.it/32x32",
+        "description": "Ex et aliquip et proident proident."
+    },
+    {
+        "id": "5ca0b755015192bd643bcd5c",
+        "name": "Lori Morin",
+        "index": 2,
+        "isActive": true,
+        "price": 92.24,
+        "image": "http://placehold.it/32x32",
+        "description": "Reprehenderit magna ut sit deserunt non."
+    },
+    {
+        "id": "5ca0b75587a324ed74bf1385",
+        "name": "Dominguez Hammond",
+        "index": 3,
+        "isActive": false,
+        "price": 20.63,
+        "image": "http://placehold.it/32x32",
+        "description": "Consectetur non deserunt voluptate voluptate et elit do sint."
+    },
+    {
+        "id": "5ca0b7558ee224d56295786a",
+        "name": "Barber Chavez",
+        "index": 4,
+        "isActive": false,
+        "price": 63.49,
+        "image": "http://placehold.it/32x32",
+        "description": "Fugiat Lorem culpa proident mollit do excepteur voluptate proident deserunt veniam ipsum amet eu et."
+    },
+    {
+        "id": "5ca0b755836da23331e70c3b",
+        "name": "Ofelia Golden",
+        "index": 5,
+        "isActive": true,
+        "price": 32.98,
+        "image": "http://placehold.it/32x32",
+        "description": "Labore veniam id ad qui duis quis sit pariatur fugiat laborum sunt sit incididunt."
+    }
+]

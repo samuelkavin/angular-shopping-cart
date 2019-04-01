@@ -1,0 +1,25 @@
+<!-- <div class="row">
+    <div class="col" *ngFor="let item of items">
+        <div>{{item.name}}
+
+        </div>
+    </div>
+
+</div> -->
+<div class="row">
+
+    <div class="col-3" *ngFor="let item of items">
+        <mat-card class="items">
+            <img mat-card-image src="../../assets/men/{{item.image}}.jpg" alt="{{item.image}}">
+            <mat-card-content>
+                <div>{{item.name}}</div>
+                <div>RM {{item.price | number : '1.2-2'}}</div>
+            </mat-card-content>
+            <mat-card-actions>
+                <mat-icon>add_shopping_cart</mat-icon>
+            </mat-card-actions>
+        </mat-card>
+
+    </div>
+
+</div>
