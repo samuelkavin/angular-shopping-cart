@@ -1,0 +1,19 @@
+.item-container {
+    margin-bottom: 2em;
+
+    .item-content {
+        text-align: center;
+
+        .view-detail {
+            cursor: pointer;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.3s linear;
+        }
+
+        &:hover .view-detail {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}

@@ -1,92 +1,122 @@
 [
     {
-        "id": "5ca0e96455ceb6e6fc926261",
-        "name": "Harper Woodward",
+        "id": "5ca1ac696cab21912de374d0",
+        "name": "Tanner Ewing",
         "index": 0,
-        "isActive": true,
-        "price": 73.14,
+        "price": 78.47,
         "image": "img01",
-        "description": "Veniam incididunt mollit laborum reprehenderit ullamco laborum.",
-        "registered": "2015-07-02T08:06:54 -08:00"
+        "description": "Consequat laboris dolore ipsum reprehenderit nulla magna exercitation laborum anim cupidatat. Ea ad reprehenderit elit quis id cupidatat ullamco consectetur. Cupidatat do irure eu anim.\r\n",
+        "detail": {
+            "tag": [
+                "New",
+                "Trend",
+                "Latest"
+            ]
+        }
     },
     {
-        "id": "5ca0e9649f0dc26dc1c1f9e3",
-        "name": "Le Reilly",
+        "id": "5ca1ac69025874bc9d150062",
+        "name": "Sears Lang",
         "index": 1,
-        "isActive": true,
-        "price": 99.93,
+        "price": 24.91,
         "image": "img02",
-        "description": "Sunt in irure in do dolor dolor duis.",
-        "registered": "2018-01-22T09:51:28 -08:00"
+        "description": "Nostrud duis ut sint pariatur exercitation esse incididunt nisi nisi excepteur consequat dolor mollit. Duis cillum duis reprehenderit quis cillum ut irure nulla. Anim dolore mollit ullamco ullamco aliquip nulla Lorem officia deserunt. Commodo non in commodo consequat ullamco ut excepteur elit mollit labore labore nostrud exercitation ex. Fugiat do eu eu eiusmod reprehenderit.\r\n",
+        "detail": {
+            "tag": [
+                "New",
+                "Trend",
+                "Latest"
+            ]
+        }
     },
     {
-        "id": "5ca0e9644bf904cccc8b951f",
-        "name": "Reid Santana",
+        "id": "5ca1ac6988437f5f0e7dd364",
+        "name": "Katharine Mason",
         "index": 2,
-        "isActive": false,
-        "price": 11.59,
+        "price": 31.47,
         "image": "img03",
-        "description": "Consequat excepteur velit eiusmod adipisicing adipisicing ut consectetur.",
-        "registered": "2017-03-17T08:19:54 -08:00"
+        "description": "Occaecat reprehenderit nulla sunt aliquip commodo deserunt excepteur. Aute tempor culpa cillum ullamco. Nisi laboris proident deserunt do.\r\n",
+        "detail": {
+            "tag": [
+                "New",
+                "Trend",
+                "Latest"
+            ]
+        }
     },
     {
-        "id": "5ca0e964b5a35dbdd4825a7c",
-        "name": "Blair Glass",
+        "id": "5ca1ac69093c7b13db8b5b88",
+        "name": "Adrian Jarvis",
         "index": 3,
-        "isActive": false,
-        "price": 53.51,
+        "price": 72.65,
         "image": "img04",
-        "description": "Ea velit dolor minim id magna aliquip adipisicing ut.",
-        "registered": "2017-04-18T12:12:14 -08:00"
+        "description": "Reprehenderit incididunt excepteur do in veniam. Laborum sint et adipisicing ea cupidatat velit aute sint esse. Non consequat consectetur anim non magna labore. Mollit mollit voluptate occaecat laboris ex irure id et elit officia dolore fugiat. Velit deserunt id ut sint aliquip sit id anim eu nisi. Incididunt voluptate excepteur eu irure qui id veniam Lorem cillum dolor ullamco.\r\n",
+        "detail": {
+            "tag": [
+                "New",
+                "Trend",
+                "Latest"
+            ]
+        }
     },
     {
-        "id": "5ca0e964dd69aa6547bc4b0c",
-        "name": "Bradley Chavez",
+        "id": "5ca1ac6926a9cdbf73dceaab",
+        "name": "Ashley Vaughan",
         "index": 4,
-        "isActive": true,
-        "price": 60.66,
+        "price": 78.57,
         "image": "img05",
-        "description": "Exercitation velit qui Lorem consectetur consequat aliquip ex magna eiusmod ullamco.",
-        "registered": "2017-11-30T09:35:29 -08:00"
+        "description": "Nisi dolor est ea ex duis dolore do. Sit id proident laborum anim laboris esse do id. Eu elit dolor aute Lorem qui pariatur reprehenderit excepteur exercitation elit labore. Duis in et cupidatat aliquip sit ullamco exercitation consectetur officia. Duis duis aliqua officia qui sit est magna ex nisi duis. Ullamco mollit ipsum adipisicing aute tempor aute non est Lorem consequat dolore nostrud. Tempor ullamco pariatur tempor laborum elit consequat culpa do ex.\r\n",
+        "detail": {
+            "tag": [
+                "New",
+                "Trend",
+                "Latest"
+            ]
+        }
     },
     {
-        "id": "5ca0e964c4c97963ecec52b7",
-        "name": "Betty Lucas",
+        "id": "5ca1ac696c68e1f2daf70f83",
+        "name": "Dina Ingram",
         "index": 5,
-        "isActive": false,
-        "price": 63.82,
+        "price": 27.6,
         "image": "img06",
-        "description": "Sint fugiat magna deserunt culpa laboris voluptate ipsum aliqua pariatur velit sint labore.",
-        "registered": "2016-03-27T04:09:50 -08:00"
+        "description": "Ut cillum nulla deserunt aliquip adipisicing labore in. Quis qui ex excepteur velit enim excepteur consequat. Ut esse ex amet minim deserunt sint ex aliqua irure commodo culpa. Laborum aute eu labore labore ullamco qui mollit esse anim. Ad velit culpa Lorem pariatur exercitation qui irure deserunt.\r\n",
+        "detail": {
+            "tag": [
+                "New",
+                "Trend",
+                "Latest"
+            ]
+        }
     },
     {
-        "id": "5ca0e96488c2fcdc6651472d",
-        "name": "Mcmahon Curry",
+        "id": "5ca1ac69a905f0173d569fe5",
+        "name": "Compton Zimmerman",
         "index": 6,
-        "isActive": true,
-        "price": 72.5,
+        "price": 86.23,
         "image": "img07",
-        "description": "Laborum aliquip adipisicing anim nostrud dolore.",
-        "registered": "2014-11-19T03:06:50 -08:00"
+        "description": "Eu aliqua eiusmod ad veniam culpa nulla. Culpa consequat ad id nisi culpa tempor veniam consequat eiusmod enim aliqua. Dolore esse velit ut amet culpa non culpa. Nisi esse minim enim Lorem Lorem. Irure sunt minim aliqua officia elit irure mollit non eu magna id anim.\r\n",
+        "detail": {
+            "tag": [
+                "New",
+                "Trend",
+                "Latest"
+            ]
+        }
     },
     {
-        "id": "5ca0e9645df40d435df88b03",
-        "name": "Twila Pacheco",
+        "id": "5ca1ac699834ca3b0052ec95",
+        "name": "Davidson Miles",
         "index": 7,
-        "isActive": false,
-        "price": 99.52,
+        "price": 77.35,
         "image": "img08",
-        "description": "Ad consectetur aute consequat et elit incididunt nisi esse eiusmod labore irure.",
-        "registered": "2016-01-08T01:22:51 -08:00"
-    },
-    {
-        "id": "5ca0e964f50600f9f7925c5e",
-        "name": "Barry Clark",
-        "index": 8,
-        "isActive": false,
-        "price": 54.92,
-        "image": "img09",
-        "description": "Enim amet in elit laborum est.",
-        "registered": "2017-09-02T10:44:26 -08:00"
+        "description": "Enim nisi mollit irure mollit esse enim irure sit mollit irure ut ad ullamco amet. Enim mollit magna ea officia. Nisi ex commodo adipisicing cupidatat exercitation aliquip eiusmod culpa officia excepteur. Minim in laborum nostrud culpa commodo esse sint laboris occaecat consectetur labore do pariatur.\r\n",
+        "detail": {
+            "tag": [
+                "New",
+                "Trend",
+                "Latest"
+            ]
+        }
     }
 ]

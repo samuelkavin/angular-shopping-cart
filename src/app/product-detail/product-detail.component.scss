@@ -1,0 +1,19 @@
+.product-detail {
+    .poster-img {
+        width: 100%;
+    }
+
+    .content {
+        margin-top: 2em;
+
+        .description {
+            margin-bottom: 2em;
+        }
+
+        .add-cart-btn {
+            background: #F44336;
+            min-width: 15em;
+            color: #fff;
+        }
+    }
+}

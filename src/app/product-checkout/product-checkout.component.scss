@@ -1,0 +1,131 @@
+.checkout-container {
+    width: 70%;
+    margin: auto;
+    .cart-list-table {
+        .cart-list-header {
+            .image-title {
+                width: 50%;
+            }
+        }
+        .cart-list-content {
+            .preview-img {
+                img {
+                    width: 20%;
+                }
+            }
+            td {
+                vertical-align: middle;
+            }
+            .remove-btn {
+                text-align: center;
+                color: #f44336;
+                .mat-icon {
+                    cursor: pointer;
+                }
+            }
+            .quantity-section {
+                .cart-quantity {
+                    -webkit-appearance: none;
+                    border: none;
+                    text-align: center;
+                    width: 32px;
+                    font-size: 16px;
+                    color: #43484D;
+                    font-weight: 300;
+                }
+                .cart-btn {
+                    border: none;
+                    background: #0ecdda;
+                    border-radius: 2px;
+                    color: white;
+                    margin-right: 1em;
+                    margin-left: 1em;
+                    min-width: 1.5em;
+                }
+            }
+        }
+    }
+    .summary-section {
+        .summary-calculation {
+            padding-top: 0;
+            ::ng-deep .mat-list-item {
+                border: 1px solid #eee;
+                margin: 0;
+            }
+        }
+        .actions {
+            padding: 0;
+            .payment-btn {
+                width: 100%;
+                background: #f44336;
+                color: #fff;
+                border-radius: 0;
+                margin-top: 1em;
+            }
+        }
+    }
+    ::ng-deep .mat-horizontal-stepper-header-container{
+        margin-bottom: 3em;
+        .mat-horizontal-stepper-header {
+            .mat-step-icon-selected {
+                background: #0ecdda;
+            }
+            .mat-step-icon-state-edit {
+                background: #c9c9c9;
+            }
+        }
+    }
+
+    .payment-section {
+        .cc-details {
+            background: #f9f9f9;
+            padding: 2em;
+            border-radius: .5em;
+            .mat-form-field {
+                width: 100%;
+            }
+            .payment-actions {
+                padding: 0;
+                .payment-btn {
+                    width: 100%;
+                    background: #f44336;
+                    color: #fff;
+                    border-radius: 0;
+                    margin-top: 1em;
+                }
+            }
+        }
+        .summary-calculation {
+            padding-top: 0;
+            ::ng-deep .mat-list-item {
+                border: 1px solid #eee;
+                margin: 0;
+            }
+        }
+        .actions {
+            padding: 0;
+            @extend .payment-btn;
+        }
+    }
+
+    .success {
+        img {
+            width: 8%;
+        }
+        .success-text {
+            margin-top: 2em;
+        }
+    }
+}
+
+.isEmpty {
+    margin-top: 2em;
+    h4 {
+        color: #b7b5b5;
+    }
+    button {
+        background: #0fd0d4;
+        color: white;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,152 @@
+    <!-- <cart-view [display]="display" [customEmptyContent]="useCustom">
+        <h1 style="text-align: center">Empty cart</h1>
+    </cart-view> -->
+
+    <ng-container *ngIf="empty">
+        <div *ngIf="!customEmptyContent" class="row text-center">
+            <div class="isEmpty col align-self-center">
+                <h4>Your cart is empty</h4>
+                <button mat-button class="btn" [routerLink]="['/product/men']">Keep shopping</button>
+            </div>
+        </div>
+        <ng-content *ngIf="customEmptyContent"></ng-content>
+    </ng-container>
+    <ng-container *ngIf="!empty">
+        <ng-container *ngIf="display !== 'table'">
+            <div *ngIf="!empty" class="cart-view">
+                <div class="cart-list-view">
+                    <div class="checkout-container">
+                        <mat-horizontal-stepper [linear]="isLinear">
+                            <mat-step>
+                                <ng-template matStepLabel>Cart</ng-template>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <table class="table cart-list-table">
+                                            <thead>
+                                                <tr class="cart-list-header">
+                                                    <th scope="col" class="image-title">Added Items</th>
+                                                    <th scope="col">Quantity</th>
+                                                    <th scope="col">Price</th>
+                                                    <th scope="col">Remove</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor="let cartItem of items" class="cart-list-content">
+                                                    <td class="preview-img">
+                                                        <img src="../../assets/men/{{cartItem.image}}.jpg"
+                                                            alt="{{cartItem.image}}"> {{cartItem.name}}
+                                                    </td>
+                                                    <td class="quantity-section">
+                                                        <button type="button" class="cart-btn"
+                                                            (click)="increase(cartItem)">+</button>
+                                                        <input type="text" class="cart-quantity"
+                                                            value="{{cartItem.quantity}}" disabled>
+                                                        <!-- <span>{{cartItem.quantity}}</span> -->
+                                                        <button type="button" class="cart-btn"
+                                                            (click)="decrease(cartItem)">-</button>
+                                                    </td>
+                                                    <td>RM {{cartItem.total() | number : '1.2-2'}}</td>
+                                                    <td class="remove-btn">
+                                                        <mat-icon (click)="onRemove(cartItem.id)">cancel</mat-icon>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-4 summary-section">
+                                        <mat-list role="list" class="summary-calculation">
+                                            <mat-list-item role="listitem" class="row justify-content-between">
+                                                <div class="col-6">Sub Total</div>
+                                                <div class="col-6 text-right">RM {{cost | number : '1.2-2'}}</div>
+                                            </mat-list-item>
+                                            <mat-list-item role="listitem" class="row justify-content-between">
+                                                <div class="col">Tax</div>
+                                                <div class="col-6 text-right">RM 00.00</div>
+                                            </mat-list-item>
+                                            <mat-list-item role="listitem" class="row justify-content-between">
+                                                <div class="col">Total Price</div>
+                                                <div class="col-6 text-right">RM {{cost | number : '1.2-2'}}</div>
+                                            </mat-list-item>
+                                        </mat-list>
+                                        <div class="col-12 actions">
+                                            <button mat-button matStepperNext class="btn payment-btn">Continue</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </mat-step>
+                            <mat-step>
+                                <ng-template matStepLabel>Payment</ng-template>
+                                <div class="payment-section">
+                                    <div class="row">
+
+                                        <div class="col-8">
+                                            <div class="cc-details">
+                                                <h6>Payment Details</h6>
+                                                <mat-form-field appearance="outline">
+                                                    <mat-label>Credit Card</mat-label>
+                                                    <input type="number" matInput placeholder="5395 3114 0122 9656">
+                                                </mat-form-field>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field appearance="outline">
+                                                            <mat-label>Expiration Date</mat-label>
+                                                            <input type="number" matInput placeholder="01/22">
+                                                        </mat-form-field>
+                                                    </div>
+                                                    <div class="col">
+                                                        <mat-form-field appearance="outline">
+                                                            <mat-label>CVV</mat-label>
+                                                            <input type="number" matInput placeholder="665">
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                                <mat-form-field appearance="outline">
+                                                    <mat-label>Name</mat-label>
+                                                    <input type="text" matInput placeholder="Placeholder">
+                                                </mat-form-field>
+                                                <div class="col-12 payment-actions">
+                                                    <button mat-button matStepperNext class="btn payment-btn">Continue
+                                                        Payment</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <mat-list role="list" class="summary-calculation">
+                                                <mat-list-item role="listitem" class="row justify-content-between">
+                                                    <div class="col-6">Sub Total</div>
+                                                    <div class="col-6 text-right">RM {{cost | number : '1.2-2'}}</div>
+                                                </mat-list-item>
+                                                <mat-list-item role="listitem" class="row justify-content-between">
+                                                    <div class="col">Tax</div>
+                                                    <div class="col-6 text-right">RM 00.00</div>
+                                                </mat-list-item>
+                                                <mat-list-item role="listitem" class="row justify-content-between">
+                                                    <div class="col">Total Price</div>
+                                                    <div class="col-6 text-right">RM {{cost | number : '1.2-2'}}</div>
+                                                </mat-list-item>
+                                            </mat-list>
+                                        </div>
+                                    </div>
+                                </div>
+                            </mat-step>
+                            <mat-step>
+                                <ng-template matStepLabel>Done</ng-template>
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <div class="success">
+                                            <img src="../../assets/success.svg" alt="sucess">
+                                            <div class="success-text">
+                                                <h5>You're done. Thank you for shopping with us</h5>
+                                                <button mat-button (click)="onClear()" class="btn">Done</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </mat-step>
+                        </mat-horizontal-stepper>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </ng-container>

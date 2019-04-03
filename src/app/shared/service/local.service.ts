@@ -1,8 +1,5 @@
 import { Injectable, Injector } from '@angular/core';
-import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { Response } from '@angular/http';
-import { map } from 'rxjs/operators';
 
 import { AbstractRestService, OptionHttpClients } from './abstract-rest.service';
 import { environment } from '../../../environments/environment';
@@ -11,11 +8,11 @@ import { environment } from '../../../environments/environment';
     providedIn: 'root'
 })
 export class LocalService implements AbstractRestService {
+
     protected env = environment;
     protected httpClient: HttpClient;
 
-    constructor(
-        protected injector: Injector) {
+    constructor(protected injector: Injector) {
         this.httpClient = injector.get(HttpClient);
     }
 

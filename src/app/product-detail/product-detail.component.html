@@ -1,0 +1,27 @@
+<div class="row product-detail">
+    <div class="col">
+        <img class="poster-img" src="../../assets/men/{{itemDetail?.image}}.jpg" alt="{{itemDetail?.image}}">
+    </div>
+    <div class="col">
+        <div>
+            <h2>{{itemDetail?.name}}</h2>
+            <h5>RM {{itemDetail?.price | number : '1.2-2'}}</h5>
+        </div>
+        <div class="content">
+            <div class="description">
+                <h5>Description</h5>
+                <div>{{itemDetail?.description}}</div>
+                {{getItems}}
+            </div>
+            <!-- <add-to-cart (click)="addToCart($event)" [item]="item" [custom]="true">
+                <button mat-button type="button" class="add-cart-btn">
+                    <mat-icon>add_shopping_cart</mat-icon>
+                    Add to cart</button>
+            </add-to-cart> -->
+            <button mat-button type="button" class="add-cart-btn" (click)="addToCart($event)">
+                <mat-icon>add_shopping_cart</mat-icon>
+                {{(isAdded) ? 'Added' : 'Add to cart'}}
+            </button>
+        </div>
+    </div>
+</div>

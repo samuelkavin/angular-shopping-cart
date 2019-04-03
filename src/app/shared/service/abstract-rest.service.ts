@@ -3,9 +3,11 @@ import { Injector, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 export abstract class AbstractRestService {
+
     public abstract get<T>(url: string, option?: OptionHttpClients, param?: any): Observable<any>;
     public abstract post<T>(url: string, data: any, option?: OptionHttpClients): Observable<any>;
     public abstract put<T>(url: string, data: any, option?: OptionHttpClients): Observable<any>;
+
 }
 
 export interface OptionHttpClients {

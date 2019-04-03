@@ -1,11 +1,12 @@
 .navbar-new-top{
     background: #fff;
     ul {
-        margin-right: 9%;
+        margin-right: 2%;
         li {
             margin-right: 8%;
         }
         .nav-item {
+            cursor: pointer;
             .shopping-cart-icon {
                 margin-top: .5em;
             }
@@ -32,15 +33,21 @@
     }
     .navbar-nav {
         .nav-item {
+            .is-active {
+                color: #f44336;
+            }
             a {
                 color: #333;
                 font-size: 14px;
                 font-weight: 600;
-                transition: 1s ease;
                 &:hover {
-                    color: #0062cc;
+                    color: #f44336;
                 }
             }
         }
     }
+}
+
+::ng-deep .cart-summary-icon {
+    display: none!important;
 }
