@@ -1,3 +1,5 @@
+@import "../../assets/scss/variable";
+
 .checkout-container {
     width: 70%;
     margin: auto;
@@ -18,7 +20,7 @@
             }
             .remove-btn {
                 text-align: center;
-                color: #f44336;
+                color: $secondary-color;
                 .mat-icon {
                     cursor: pointer;
                 }
@@ -35,7 +37,7 @@
                 }
                 .cart-btn {
                     border: none;
-                    background: #0ecdda;
+                    background: $primary-color;
                     border-radius: 2px;
                     color: white;
                     margin-right: 1em;
@@ -57,7 +59,7 @@
             padding: 0;
             .payment-btn {
                 width: 100%;
-                background: #f44336;
+                background: $secondary-color;
                 color: #fff;
                 border-radius: 0;
                 margin-top: 1em;
@@ -68,7 +70,7 @@
         margin-bottom: 3em;
         .mat-horizontal-stepper-header {
             .mat-step-icon-selected {
-                background: #0ecdda;
+                background: $primary-color;
             }
             .mat-step-icon-state-edit {
                 background: #c9c9c9;
@@ -88,7 +90,7 @@
                 padding: 0;
                 .payment-btn {
                     width: 100%;
-                    background: #f44336;
+                    background: $secondary-color;
                     color: #fff;
                     border-radius: 0;
                     margin-top: 1em;
@@ -114,6 +116,12 @@
         }
         .success-text {
             margin-top: 2em;
+            button {
+                background: $primary-color;
+                min-width: 7em;
+                margin-top: 2em;
+                color: #fff;
+            }
         }
     }
 }
@@ -124,8 +132,8 @@
         color: #b7b5b5;
     }
     button {
-        background: #0fd0d4;
-        color: white;
+        background: $primary-color;
+        color: #fff;
         margin-top: 20px;
     }
 }
