@@ -8,22 +8,24 @@ import { ProductWomenComponent } from './../product-women/product-women.componen
 import { ProductCheckoutComponent } from './../product-checkout/product-checkout.component';
 
 const productRoutes: Routes = [
-    { path: '', component: ProductComponent,
+    {
+        path: '', component: ProductComponent,
         children: [
             { path: 'men', component: ProductMenComponent },
             { path: 'women', component: ProductWomenComponent },
             { path: 'men/:id', component: ProductDetailComponent },
-            { path: 'checkout', component: ProductCheckoutComponent }
+            { path: 'checkout', component: ProductCheckoutComponent },
+            { path: '**', redirectTo: 'men', pathMatch: 'full' }
         ]
     }
 ];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    RouterModule.forChild(productRoutes)
-  ],
-  exports: [RouterModule]
+    declarations: [],
+    imports: [
+        RouterModule.forChild(productRoutes)
+    ],
+    exports: [RouterModule]
 })
 
 export class ProductRoutingModule { }
